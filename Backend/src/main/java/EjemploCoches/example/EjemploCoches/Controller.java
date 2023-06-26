@@ -7,12 +7,12 @@ import java.util.ArrayList;
 @RestController
 public class Controller {
 
-    @GetMapping("/Cripto")
+    @GetMapping("/Coches")
     public ArrayList<Coche> listaObjeto1()
     {
         LeerJson reader = new LeerJson();
         //Leemos el reason e introducimos los elementos en un arraylist
-        ArrayList<Coche> lista = reader.LeerFicheroJson1("Criptomonedas.json");
+        ArrayList<Coche> lista = reader.LeerFicheroJson1("Almacen.json");
         //Mostramos los elementos leidos
         return lista;
     }
