@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class DataHanding {
     public ArrayList<Coche> AnadirObjeto1(Coche objeto1, String ruta)
     {
+        //MAS comenatios
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList
         LeerJson reader = new LeerJson();
         ArrayList<Coche> listaAux = reader.LeerFicheroJson1(ruta);
@@ -15,6 +16,7 @@ public class DataHanding {
 
     public ArrayList<Coche> EliminarObjeto (int id, String ruta)
     {
+        //Arreglando Comentarios y probando
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
         LeerJson reader = new LeerJson();
         ArrayList<Coche> listaAux = reader.LeerFicheroJson1(ruta);
