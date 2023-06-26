@@ -12,22 +12,22 @@ public class Controller {
     {
         LeerJson reader = new LeerJson();
         //Leemos el reason e introducimos los elementos en un arraylist
-        ArrayList<Coche> lista = reader.LeerFicheroJson1("Almacen.json");
+        ArrayList<Coche> lista = reader.LeerFicheroJson1("Coche.json");
         //Mostramos los elementos leidos
         return lista;
     }
-/*
-    @PostMapping("/CriptoA")
-    public ArrayList<Criptomoneda> create(@RequestBody Criptomoneda objeto1)
+
+    @PostMapping("/CochesA")
+    public ArrayList<Coche> create(@RequestBody Coche objeto1)
     {
         DataHanding dataHanding = new DataHanding();
-        ArrayList<Criptomoneda> lista;
-        lista = dataHanding.AnadirObjeto1(objeto1,"Criptomonedas.json");
+        ArrayList<Coche> lista;
+        lista = dataHanding.AnadirObjeto1(objeto1,"Coche.json");
         EscribirJson escribirJSON = new EscribirJson();
         escribirJSON.escribirObjeto1(lista);
         return lista;
     }
-
+/*
     @DeleteMapping("/CriptoB{id}")
     public ArrayList<Criptomoneda> Borrar(@RequestParam int id)
     {
