@@ -22,16 +22,14 @@ public class VistaAlta extends VerticalLayout {
         removeAll();
         HorizontalLayout horizontal= new HorizontalLayout();
 
-        Label etiqueta1 = new Label("Nombre");
+        Label etiqueta1 = new Label("Marca");
         TextField texto1 = new TextField();
-        Label etiqueta2 = new Label("Valor:");
+        Label etiqueta2 = new Label("Edad:");
         TextField texto2 = new TextField();
-        Label etiqueta3 = new Label("Fluctuacion:");
+        Label etiqueta3 = new Label("Color:");
         TextField texto3 = new TextField();
-        Label etiqueta4 = new Label("Categoria:");
+        Label etiqueta4 = new Label("Popularidad:");
         TextField texto4 = new TextField();
-        Label etiqueta5 = new Label("Popularidad:");
-        TextField texto5 = new TextField();
 
         Button boton = new Button("Añadir");
 //Corregido y hecho
@@ -40,7 +38,7 @@ public class VistaAlta extends VerticalLayout {
             public void onComponentEvent(ClickEvent<Button> event) {
                 ArrayList<Coche> listaAux = new ArrayList<>();
 
-                Coche objeto = new Coche(0, texto1.getValue(),Double.parseDouble(texto2.getValue()),Double.parseDouble(texto3.getValue()),texto4.getValue(),texto5.getValue());
+                Coche objeto = new Coche(0, texto1.getValue(),Integer.parseInt(texto2.getValue()),texto3.getValue(),texto4.getValue());
                 listaAux = DataService.aniadirDatosLista(objeto, listaAux);
 
 
@@ -48,11 +46,10 @@ public class VistaAlta extends VerticalLayout {
                 texto2.setValue("");
                 texto3.setValue("");
                 texto4.setValue("");
-                texto5.setValue("");
             }
         });
 
-        horizontal.add(etiqueta1, texto1, etiqueta2, texto2, etiqueta3, texto3,etiqueta4, texto4,etiqueta5, texto5);
+        horizontal.add(etiqueta1, texto1, etiqueta2, texto2, etiqueta3, texto3,etiqueta4, texto4);
         this.add(horizontal,boton);
     }
 }
