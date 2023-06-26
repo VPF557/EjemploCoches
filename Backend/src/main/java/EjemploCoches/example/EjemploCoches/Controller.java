@@ -12,7 +12,7 @@ public class Controller {
     {
         LeerJson reader = new LeerJson();
         //Leemos el reason e introducimos los elementos en un arraylist
-        ArrayList<Coche> lista = reader.LeerFicheroJson1("Coche.json");
+        ArrayList<Coche> lista = reader.LeerFicheroJson1("Almacen.json");
         //Mostramos los elementos leidos
         return lista;
     }
@@ -22,7 +22,7 @@ public class Controller {
     {
         DataHanding dataHanding = new DataHanding();
         ArrayList<Coche> lista;
-        lista = dataHanding.AnadirObjeto1(objeto1,"Coche.json");
+        lista = dataHanding.AnadirObjeto1(objeto1,"Almacen.json");
         EscribirJson escribirJSON = new EscribirJson();
         escribirJSON.escribirObjeto1(lista);
         return lista;
