@@ -31,6 +31,7 @@ public class Controller {
     @DeleteMapping("/CochesA{id}")
     public ArrayList<Coche> Borrar(@RequestParam int id)
     {
+        //hecho
         DataHanding dataHanding = new DataHanding();
         ArrayList<Coche> lista;
         lista = dataHanding.EliminarObjeto(id,"Almacen.json");
