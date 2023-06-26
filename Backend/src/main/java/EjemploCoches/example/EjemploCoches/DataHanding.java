@@ -15,6 +15,7 @@ public class DataHanding {
 
     public ArrayList<Coche> EliminarObjeto (int id, String ruta)
     {
+        //Arreglando Comentarios y probando
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
         LeerJson reader = new LeerJson();
         ArrayList<Coche> listaAux = reader.LeerFicheroJson1(ruta);
