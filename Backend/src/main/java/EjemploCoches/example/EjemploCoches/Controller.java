@@ -28,7 +28,7 @@ public class Controller {
         return lista;
     }
 
-    @DeleteMapping("/CochesA{id}")
+    @DeleteMapping("/CochesB{id}")
     public ArrayList<Coche> Borrar(@RequestParam int id)
     {
         //hecho
