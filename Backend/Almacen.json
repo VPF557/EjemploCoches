@@ -1,0 +1,5 @@
+[{"id":1,"marca":"ferrari","valor":20000.0,"color":"verde","edad":2013,"popularidad":"Alta"},
+  {"id":2,"marca":"peugot","valor":10000.0,"color":"rojo","edad":2014,"popularidad":"Alta"},
+  {"id":3,"marca":"fiat","valor":2000.0,"color":"amarillo","edad":2015,"popularidad":"Baja"},
+  {"id":4,"marca":"cupra","valor":300.0,"color":"azul","edad":2022,"popularidad":"Alta"}
+]
