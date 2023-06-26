@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class DataHanding {
     public ArrayList<Coche> AnadirObjeto1(Coche objeto1, String ruta)
     {
+        //MAS comenatios
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList
         LeerJson reader = new LeerJson();
         ArrayList<Coche> listaAux = reader.LeerFicheroJson1(ruta);
