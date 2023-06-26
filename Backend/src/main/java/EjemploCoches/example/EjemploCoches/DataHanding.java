@@ -12,12 +12,12 @@ public class DataHanding {
         listaAux.add(objeto1);
         return listaAux;
     }
-/*
-    public ArrayList<Criptomoneda> EliminarObjeto (int id, String ruta)
+
+    public ArrayList<Coche> EliminarObjeto (int id, String ruta)
     {
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
         LeerJson reader = new LeerJson();
-        ArrayList<Criptomoneda> listaAux = reader.LeerFicheroJson1(ruta);
+        ArrayList<Coche> listaAux = reader.LeerFicheroJson1(ruta);
         for (int i = 0; i < listaAux.size() ; i++ )
         {
             if(listaAux.get(i).getId() == id)
@@ -28,7 +28,7 @@ public class DataHanding {
         return listaAux;
     }
 
-    public int ComprobarObjeto(Criptomoneda objeto1, String ruta , ArrayList<Criptomoneda> listaAux)
+    public int ComprobarObjeto(Coche objeto1, String ruta , ArrayList<Coche> listaAux)
     {
         //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
         LeerJson reader = new LeerJson();
@@ -37,10 +37,9 @@ public class DataHanding {
         for (int i = 0; i < listaAux.size(); i++)
         {
             if
-            (       objeto1.getNombre().equals(listaAux.get(i).getNombre()) &&
-                    objeto1.getValor() ==  listaAux.get(i).getValor() &&
-                    objeto1.getFluctuacion() == listaAux.get(i).getFluctuacion() &&
-                    objeto1.getCategoria().equals(listaAux.get(i).getCategoria()) &&
+            (       objeto1.getMarca().equals(listaAux.get(i).getMarca()) &&
+                    objeto1.getEdad() ==  listaAux.get(i).getEdad() &&
+                    objeto1.getColor().equals(listaAux.get(i).getColor()) &&
                     objeto1.getPopularidad().equals(listaAux.get(i).getPopularidad())
             )
             {
@@ -54,7 +53,5 @@ public class DataHanding {
         }
         return control;
     }
-
-*/
 
 }
